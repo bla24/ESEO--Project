@@ -124,8 +124,12 @@ If you have the counter-calories project locally:
 
 1. **Add UI constraints**: Configure TextFields in FXML to only accept numeric input
 2. **Use validation libraries**: Consider ControlsFX or similar for advanced validation
-3. **Add logging**: Log validation errors for debugging
-4. **Internationalization**: Use resource bundles for error messages
+3. **Add logging**: Replace `System.out.println` with a proper logging framework (SLF4J, Log4j2) for better maintainability
+4. **Use proper testing**: Replace the main method test with JUnit or TestNG for better test organization
+5. **Improve API design**: Consider using a builder pattern instead of the boolean parameter constructor overload
+6. **Internationalization**: Use resource bundles for error messages
+
+**Note**: The package name "pannel" (with double-n) matches the original code from the error stack trace. In a refactoring, you might want to rename it to "panel" (single-n) for correct spelling.
 
 ## Files in This Example
 

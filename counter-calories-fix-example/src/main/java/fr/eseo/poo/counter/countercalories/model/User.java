@@ -71,6 +71,12 @@ public class User {
     /**
      * Alternative constructor that accepts optional numeric fields.
      * Uses default values if fields are null or empty.
+     * 
+     * NOTE: The boolean parameter pattern is shown here as an alternative approach,
+     * but in production code, consider using the Builder pattern or separate factory
+     * methods (e.g., createWithDefaults()) for better API clarity.
+     * 
+     * @param useDefaults If true, uses default values instead of throwing exceptions
      */
     public User(String name, String email, String ageStr, String weightStr, String heightStr, 
                 boolean useDefaults) {

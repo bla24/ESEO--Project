@@ -134,7 +134,10 @@ This follows the principle of "fail fast, fail gracefully" and provides better u
 1. **Add input type validation in FXML**: Use `TextField` constraints to only allow numeric input
 2. **Use JavaFX Validation Framework**: Libraries like ControlsFX provide built-in validation
 3. **Consider using Integer instead of int**: This allows null values for optional fields
-4. **Add logging**: Log validation errors for debugging purposes
+4. **Use proper logging**: Replace `System.out.println` with SLF4J or Log4j2 for production code
+5. **Use JUnit for testing**: Proper testing frameworks provide better test organization than main methods
+6. **Fix package naming**: Consider renaming "pannel" to "panel" (correct spelling) in a future refactor
+7. **Builder pattern**: For constructors with many parameters, consider using the Builder pattern for better API design
 
 ## Testing
 

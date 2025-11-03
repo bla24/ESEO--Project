@@ -3,8 +3,9 @@ package fr.eseo.poo.counter.countercalories.model;
 /**
  * Simple test class to demonstrate that the User class fix works.
  * 
- * This is a basic test without JUnit to demonstrate the fix.
- * In a real project, use proper testing frameworks like JUnit or TestNG.
+ * NOTE: This uses a simple main method for demonstration purposes.
+ * In production code, use JUnit, TestNG, or another proper testing framework
+ * for better test organization, reporting, and integration with build tools.
  */
 public class UserTest {
     

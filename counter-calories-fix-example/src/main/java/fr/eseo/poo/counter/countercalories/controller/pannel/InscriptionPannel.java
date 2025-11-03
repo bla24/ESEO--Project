@@ -99,6 +99,7 @@ public class InscriptionPannel {
             saveUser(newUser);
             
             // Show success message
+            // NOTE: In production, use a proper logging framework (SLF4J, Log4j2) instead of System.out
             System.out.println("Nouveau utilisateur ajouté !");
             showSuccess("Success", "User added successfully!");
             
@@ -140,7 +141,7 @@ public class InscriptionPannel {
      */
     private void saveUser(User user) {
         // TODO: Implement actual database/storage logic
-        // For now, just print to console
+        // NOTE: In production, use a proper logging framework (SLF4J, Log4j2) instead of System.out
         System.out.println("Saving user: " + user);
     }
     
